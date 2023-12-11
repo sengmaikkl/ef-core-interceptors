@@ -63,8 +63,8 @@ static Employee_DBContext BuildUniversityContext()
     var dbContextBuilder = new DbContextOptionsBuilder<Employee_DBContext>();
 
     // HARDCODED - For this demo.  
-    //var connectionString = "Server=SENGMAIKOKOLAY;Database=Employee_DB;Trusted_Connection=False;User ID=sa;Password=123456";
-    var connectionString = "Data Source=SENGMAIKOKOLAY;Initial Catalog=Employee_DB;Integrated Security=True;TrustServerCertificate=True;User ID=sa;Password=123456;";
+   
+    var connectionString = "Data Source=SENGMAIKOKOLAY;Initial Catalog=Employee_DB;Integrated Security=True;TrustServerCertificate=True;";
 
     dbContextBuilder.UseSqlServer(connectionString);
     return new Employee_DBContext(dbContextBuilder.Options);
